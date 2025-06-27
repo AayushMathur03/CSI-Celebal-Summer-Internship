@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="logo">TechBlog</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Main Content Area -->
+        <main>
+            <section class="hero-section">
+                <h1>Welcome to Modern Web Development</h1>
+                <p>Exploring the latest trends in responsive design and user experience</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Latest Articles</h2>
+                <p>Stay updated with the newest developments in web technology, design patterns, and best practices. Our comprehensive guides will help you master modern web development techniques.</p>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>CSS Grid Mastery</h3>
+                        <p>Learn how to create complex layouts with ease using CSS Grid. This powerful layout system revolutionizes how we approach web design.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Flexbox Fundamentals</h3>
+                        <p>Master the art of flexible layouts with Flexbox. Perfect for creating responsive navigation menus and dynamic content arrangements.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Responsive Design</h3>
+                        <p>Discover techniques for creating websites that look great on all devices. Learn about media queries, mobile-first design, and adaptive layouts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>About This Layout</h2>
+                <p>This page demonstrates a modern responsive layout using CSS Grid for the overall structure and Flexbox for component-level layouts. The design adapts seamlessly across different screen sizes, providing an optimal viewing experience on desktop, tablet, and mobile devices.</p>
+                
+                <p>Key features include a sticky navigation header, grid-based content layout, responsive sidebar, and a mobile-friendly hamburger menu. The layout utilizes the CSS box model effectively with proper spacing, padding, and margins throughout.</p>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Quick Links</h3>
+            <ul class="sidebar-list">
+                <li><span>Web Development Basics</span></li>
+                <li><span>HTML5 Semantic Elements</span></li>
+                <li><span>CSS3 Animations</span></li>
+                <li><span>JavaScript ES6+</span></li>
+                <li><span>React Fundamentals</span></li>
+                <li><span>Node.js Backend</span></li>
+                <li><span>Database Design</span></li>
+                <li><span>API Development</span></li>
+            </ul>
+
+            <div class="widget">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get the latest updates on web development trends and tutorials.</p>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><span>Documentation</span></li>
+                        <li><span>Tutorials</span></li>
+                        <li><span>Code Examples</span></li>
+                        <li><span>Best Practices</span></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><span>Forums</span></li>
+                        <li><span>Discord</span></li>
+                        <li><span>GitHub</span></li>
+                        <li><span>Stack Overflow</span></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><span>Contact Us</span></li>
+                        <li><span>FAQ</span></li>
+                        <li><span>Bug Reports</span></li>
+                        <li><span>Feature Requests</span></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 TechBlog. All rights reserved. Built with modern CSS techniques.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default link behavior
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickOnHamburger = hamburger.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
