@@ -42,29 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Optional: Add sound effect on click (uncomment to enable)
-    /*
-    button.addEventListener('click', function() {
-        // Create audio context for click sound
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        const oscillator = audioContext.createOscillator();
-        const gainNode = audioContext.createGain();
-        
-        oscillator.connect(gainNode);
-        gainNode.connect(audioContext.destination);
-        
-        oscillator.frequency.value = 800;
-        oscillator.type = 'sine';
-        
-        gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
-        
-        oscillator.start();
-        oscillator.stop(audioContext.currentTime + 0.1);
-    });
-    */
-    
-    // Optional: Add more interactive features
     let clickCount = 0;
     button.addEventListener('click', function() {
         clickCount++;
