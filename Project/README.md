@@ -1,4 +1,4 @@
-markdown# Aayush's Personal Portfolio
+# Aayush's Personal Portfolio
 
 [![Render](https://img.shields.io/badge/Deployed%20on-Render-00c7b7?logo=render&logoColor=white)](https://portfolio-website-rxmy.onrender.com)
 
@@ -16,9 +16,7 @@ markdown# Aayush's Personal Portfolio
 - [Project Structure](#-project-structure)
 - [Sections Overview](#-sections-overview)
 - [Customization Guide](#-customization-guide)
-- [Technologies Used](#-technologies-used)
-- [Credits](#-credits)
-- [License](#-license)
+
 
 ## 🎯 Overview
 
@@ -215,16 +213,7 @@ portfolio-website/
 - **Fonts**: Google Fonts (Space Grotesk, Fira Mono)
 - **Deployment**: Render (or any static hosting service)
 
-## 🙏 Credits
 
-- **Design Inspiration**: [Brittany Chiang](https://brittanychiang.com/), modern portfolio trends
-- **Icons**: [Font Awesome](https://fontawesome.com/), [Boxicons](https://boxicons.com/)
-- **Fonts**: [Google Fonts](https://fonts.google.com/)
-- **Animations**: Custom CSS animations and transitions
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
