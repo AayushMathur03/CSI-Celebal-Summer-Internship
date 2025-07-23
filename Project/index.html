@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush | Bold Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">A</span>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+
+  <!-- Dark/Light Toggle -->
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">
+    <span class="toggle-sun">☀️</span>
+    <span class="toggle-moon">🌙</span>
+  </button>
+
+  <!-- Navigation -->
+  <header id="mainHeader">
+    <nav class="navbar" aria-label="Main Navigation">
+      <!-- No branding or logo, just nav links and toggle -->
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Header -->
+  <section id="hero" class="hero-section" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-hello">Hey, I'm</span>
+        <span class="hero-name">Aayush</span>
+      </h1>
+      <h2 class="hero-role">Web Developer &amp; Creative Coder</h2>
+      <div class="hero-intro">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </div>
+      <a href="#projects" class="cta-btn">See My Work</a>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="mouse">
+          <div class="mouse-wheel"></div>
+        </div>
+        <div class="arrow-bounce"></div>
+      </div>
+    </div>
+    <div class="hero-parallax">
+      <img src="assets/hero-shape1.svg" class="parallax parallax1" alt="" aria-hidden="true">
+      <img src="assets/hero-shape2.svg" class="parallax parallax2" alt="" aria-hidden="true">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section" aria-label="About Me">
+    <div class="about-split">
+      <div class="about-img-wrap">
+        <img src="assets/profile.jpg" alt="Aayush Profile Picture" class="about-img" loading="lazy">
+        <div class="about-img-bg"></div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="about-desc">I'm a <b>cranky</b> web developer who loves to break the rules of minimalism. I create bold, interactive, and visually rich web experiences. My work is a blend of code, design, and a bit of attitude.</p>
+        <ul class="about-facts">
+          <li><span>🎨</span> Design-driven</li>
+          <li><span>⚡</span> Animation addict</li>
+          <li><span>🧩</span> Loves micro-interactions</li>
+        </ul>
+        <button id="funFactBtn" class="btn-secondary" aria-label="Show a fun fact">Fun Fact</button>
+        <span id="funFactText" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section" aria-label="Skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/html5.svg" alt="HTML5">
+        <span>HTML5</span>
+        <div class="progress-bar" aria-label="HTML5 proficiency"><div class="progress" style="width: 95%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/css3.svg" alt="CSS3">
+        <span>CSS3</span>
+        <div class="progress-bar" aria-label="CSS3 proficiency"><div class="progress" style="width: 92%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/javascript.svg" alt="JavaScript">
+        <span>JavaScript</span>
+        <div class="progress-bar" aria-label="JavaScript proficiency"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/git.svg" alt="Git">
+        <span>Git</span>
+        <div class="progress-bar" aria-label="Git proficiency"><div class="progress" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/github.svg" alt="GitHub">
+        <span>GitHub</span>
+        <div class="progress-bar" aria-label="GitHub proficiency"><div class="progress" style="width: 85%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/flutter.svg" alt="Flutter Design">
+        <span>Flutter</span>
+        <div class="progress-bar" aria-label="Responsive proficiency"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/firebase.svg" alt="Firebase">
+        <span>Firebase</span>
+        <div class="progress-bar" aria-label="Responsive proficiency"><div class="progress" style="width: 90%"></div></div>
+      </div>
+      <div class="skill-item glass" tabindex="0">
+        <img src="assets/icons/dart.svg" alt="Dart">
+        <span>Dart</span>
+        <div class="progress-bar" aria-label="Responsive proficiency"><div class="progress" style="width: 90%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="timeline-section center-timeline-section">
+    <div class="timeline-header">
+      <span class="timeline-icon"><i class="fa-solid fa-book"></i></span>
+      <h2 class="timeline-title">Education</h2>
+    </div>
+    <div class="timeline-list">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">JECRC Foundation </h3>
+          <span class="timeline-duration"> 2022 — 2026</span>
+          <p class="timeline-desc"> B.Tech in Computer Science and Engineering</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">Apex International School, Jaipur</h3>
+          <span class="timeline-duration">2021</span>
+          <p class="timeline-desc">12th Grade</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">Saint Paul's School, Bijainagar</h3>
+          <span class="timeline-duration">2019</span>
+          <p class="timeline-desc">10th Grade</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="timeline-section center-timeline-section">
+    <div class="timeline-header">
+      <span class="timeline-icon"><i class="fa-solid fa-briefcase"></i></span>
+      <h2 class="timeline-title">Experience</h2>
+    </div>
+    <div class="timeline-list">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">Celebal Technologies, Jaipur</h3>
+          <span class="timeline-duration">June 2025 - Present</span>
+          <p class="timeline-desc">App Modernization Intern</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">MindTurf Pvt. Ltd, New Delhi</h3>
+          <span class="timeline-duration">Feb 2025 — May 2025</span>
+          <p class="timeline-desc"> Mobile App Development Intern</p>
+        </div>
+      </div>
+      <!-- <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-item-title">Web Designer</h3>
+          <span class="timeline-duration">2010 — 2013</span>
+          <p class="timeline-desc">Nemo enims ipsam voluptatem, blanditiis prsesentium voluptatum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery -->
+  <section id="projects" class="projects-section" aria-label="Projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-gallery">
+      <div class="project-card glass" tabindex="0">
+        <div class="project-img-wrap">
+          <img src="assets/project1.png" alt="Screenshot of VisiCheck">
+          <div class="project-img-overlay"></div>
+        </div>
+        <div class="project-info project-info-flex">
+          <div class="project-info-main">
+            <h3>VisiCheck</h3>
+            <p>A smart attendance app using face recognition, real-time location, and cloud backend.</p>
+            <span class="tech-stack">Flutter | Dart | Firebase | Google Maps API | FastAPI | Python</span>
+          </div>
+          <a href="https://github.com/AayushMathur03/Visicheck" target="_blank" rel="noopener" class="github-link project-github-pill" aria-label="View VisiCheck on GitHub">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card glass" tabindex="0">
+        <div class="project-img-wrap">
+          <img src="assets/project2.png" alt="Screenshot of Escape Space">
+          <div class="project-img-overlay"></div>
+        </div>
+        <div class="project-info project-info-flex">
+          <div class="project-info-main">
+            <h3>Escape Space</h3>
+            <p>A 2D mobile game built with Flutter and Flame engine featuring obstacle-based gameplay.</p>
+            <span class="tech-stack">Flutter | Dart | Firebase | Flame | Firebase SDK</span>
+          </div>
+          <a href="https://github.com/AayushMathur03/escape_space" target="_blank" rel="noopener" class="github-link project-github-pill" aria-label="View Escape Space on GitHub">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card glass" tabindex="0">
+        <div class="project-img-wrap">
+          <img src="assets/project3.png" alt="Screenshot of BaatChat">
+          <div class="project-img-overlay"></div>
+        </div>
+        <div class="project-info project-info-flex">
+          <div class="project-info-main">
+            <h3>BaatChat</h3>
+            <p>Real-time chat app using Firebase backend with secure user messaging and authentication.
+            </p>
+            <span class="tech-stack">Flutter | Dart | Firebase SDK | Firebase Cloud</span>
+          </div>
+          <a href="https://github.com/AayushMathur03/Baat_Chat" target="_blank" rel="noopener" class="github-link project-github-pill" aria-label="View BaatChat on GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for project preview -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project Preview">
+      <div class="modal-content glass">
+        <button class="close-modal" aria-label="Close project preview">&times;</button>
+        <img id="modalImg" src="" alt="Project Preview">
+        <div id="modalDesc"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-section" aria-label="Contact">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <form id="contactForm" class="glass" autocomplete="off" novalidate>
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" aria-label="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" aria-label="Your Email">
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Your Message" required aria-required="true" aria-label="Your Message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <div id="formSuccess" class="form-success" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer glass" aria-label="Footer">
+    <div class="footer-visuals">
+      <img src="assets/footer-shape.svg" alt="" aria-hidden="true">
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/AayushMathur03" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/icons/github.svg" alt="GitHub" class="footer-github-icon github-dark-toggle">
+        <img src="assets/icons/github-dark.svg" alt="GitHub" class="footer-github-icon github-light-toggle">
+      </a>
+      <a href="https://www.linkedin.com/in/am0306/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="mailto:aayushworks03@.com" aria-label="Email"><img src="assets/icons/email.svg" alt="Email"></a>
+    </div>
+    <div class="footer-links">
+      <!-- Removed Portfolio Source -->
+      <!-- Scroll-to-top button: always visible, floating bottom-right -->
+      <button id="scrollToTop" title="Back to top" aria-label="Scroll to top" class="scroll-to-top-floating" style="display: flex;">↑</button>
+    </div>
+    <p>&copy; 2024 Aayush. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
