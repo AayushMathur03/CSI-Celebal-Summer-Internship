@@ -213,7 +213,10 @@ portfolio-website/
 - **Fonts**: Google Fonts (Space Grotesk, Fira Mono)
 - **Deployment**: Render (or any static hosting service)
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 ---
 
